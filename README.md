@@ -56,4 +56,4 @@ https://rutube.ru/video/e6c964db4c1ccb576c4daf9c687e4bdd/
 https://rutube.ru/video/d1e8d9703144016ca12d1ce6ea847022/
 
 ### J_Flash_Extender_by_AJLCYDX - .exe оболочка для flashplayer, расширяет возможности flashplayer
-написанно на C++
+написанно на C++ и Pascal
