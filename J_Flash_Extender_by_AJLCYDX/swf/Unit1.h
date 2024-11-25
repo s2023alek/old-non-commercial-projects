@@ -1,0 +1,47 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit1H
+#define Unit1H
+//---------------------------------------------------------------------------
+#include <Classes.hpp>
+#include <Controls.hpp>
+#include <StdCtrls.hpp>
+#include <Forms.hpp>
+#include "ShockwaveFlashObjects_OCX.h"
+#include <OleCtrls.hpp>
+#include <ExtCtrls.hpp>
+#include <jpeg.hpp>
+#include <Menus.hpp>
+//---------------------------------------------------------------------------
+class TForm1 : public TForm
+{
+__published:	// IDE-managed Components
+        TShockwaveFlash *ShockwaveFlash1;
+        TMemo *Memo1;
+        TImage *Image1;
+        TPopupMenu *PopupMenu1;
+        TMenuItem *N01;
+        void __fastcall FormCreate(TObject *Sender);
+        void __fastcall ShockwaveFlash1FSCommand(TObject *Sender,
+          BSTR command, BSTR args);
+        void __fastcall FormCloseQuery(TObject *Sender, bool &CanClose);
+      
+private:	// User declarations
+       /*
+       //J-----------------------------------------------------DRAG AND DROP FILES>>>
+       void __fastcall WmDropFiles(TWMDropFiles & Message);
+       //J-----------------------------------------------------DRAG AND DROP FILES<<<
+       */
+       public: // User declarations
+//J-----------------------------------------------------DRAG AND DROP FILES>>>
+        BEGIN_MESSAGE_MAP
+        //MESSAGE_HANDLER(WM_DROPFILES,TWMDropFiles,WmDropFiles)
+        END_MESSAGE_MAP(TForm)
+        //J-----------------------------------------------------DRAG AND DROP FILES<<<
+        
+        __fastcall TForm1(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TForm1 *Form1;
+//---------------------------------------------------------------------------
+#endif
